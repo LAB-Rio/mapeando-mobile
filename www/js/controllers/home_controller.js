@@ -129,7 +129,7 @@ angular.module('mapeando').controller('HomeCtrl', function($scope, demandFactory
   // Load indicator
   $scope.show = function() {
     $ionicLoading.show({
-      template: 'Atualizando as demandas...'
+      templateUrl: 'templates/loading.html',
     });
   };
 

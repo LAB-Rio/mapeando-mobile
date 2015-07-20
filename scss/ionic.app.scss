@@ -78,6 +78,13 @@ $positive: #ed2654 !default;
 }
 
 
+
+.loading {
+    background: white !important; 
+    color: #444 !important;
+}
+
+
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 

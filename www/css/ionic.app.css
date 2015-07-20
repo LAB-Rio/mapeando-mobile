@@ -54,6 +54,10 @@ $dark:                            #444 !default;
   height: 50px !important;
   width: 50px !important; }
 
+.loading {
+  background: white !important;
+  color: #444 !important; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
