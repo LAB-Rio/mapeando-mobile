@@ -9,7 +9,7 @@ angular.module('mapeando', ['ionic', 'ionic-material', 'leaflet-directive', 'ngC
 
   $ionicPlatform.ready(function() {
 
-    $cordovaStatusbar.styleHex('#a90e32');
+    $cordovaStatusbar.styleHex('#444');
 
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -17,7 +17,7 @@ angular.module('mapeando', ['ionic', 'ionic-material', 'leaflet-directive', 'ngC
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
     if(window.StatusBar && window.cordova.platform == 'android') {
-  		window.StatusBar.backgroundColorByHexString('#a90e32');
+  		window.StatusBar.backgroundColorByHexString('#555');
     }
   });
 

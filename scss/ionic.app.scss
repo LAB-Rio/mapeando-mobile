@@ -21,6 +21,23 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 $positive: #ed2654 !default;
 
+.tabs {
+  height: 60px !important;
+  .tab-item {
+    padding-top: 5px !important;
+  }
+
+}
+
+
+.bar {
+  box-shadow: 0 2px 2px 0 rgba(33, 33, 33, .1) !important;
+  height: 55px !important;
+}
+
+.tab-item-feat {
+  background: darken($positive, 10%);
+}
 .bar-positive { 
   //padding: 1.6em 0 !important;
 }
@@ -82,6 +99,11 @@ $positive: #ed2654 !default;
 .loading {
     background: white !important; 
     color: #444 !important;
+}
+
+
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+    border-bottom: 3px solid white !important;
 }
 
 

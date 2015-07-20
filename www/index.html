@@ -43,24 +43,24 @@
 
   </head>
   <body ng-app="mapeando">
-    <ion-nav-bar class="bar-positive" align-title="center">
+    <ion-nav-bar  align-title="center">
       <ion-nav-back-button>
-        <i class="ion-arrow-left-c"></i> Voltar
       </ion-nav-back-button>
     </ion-nav-bar>
     <ion-nav-view></ion-nav-view> 
-      <div class="tabs tabs-icon-top">
+
+      <div class="tabs tabs-icon-top tabs-positive">
         <a class="tab-item" ui-sref="demands">
-          <i class="icon ion-home"></i>
-          Home
+          <i class="icon ion-android-list"></i>
+          Demandas
         </a>
-        <a class="tab-item">
-          <i class="icon ion-star"></i>
-          Favorites
+        <a class="tab-item tab-item-feat" ui-sref="new">
+          <i class="icon ion-android-pin"></i>
+          Indique uma demanda 
         </a>
-        <a class="tab-item">
-          <i class="icon ion-gear-a"></i>
-          Settings
+        <a class="tab-item" ui-sref="home">
+          <i class="icon ion-map"></i>
+          Mapa
         </a>
       </div>  
   </body>
