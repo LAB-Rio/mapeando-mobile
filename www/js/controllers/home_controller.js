@@ -1,10 +1,11 @@
-angular.module('mapeando').controller('HomeCtrl', function($scope, demandFactory, leafletData, $ionicLoading) {
+angular.module('mapeando').controller('HomeCtrl', function(
+  $scope, demandFactory, leafletData, $ionicLoading) {
 
   $scope.layerGroup = null;
 
   $scope.map = {
       defaults: {
-        tileLayer: 'http://{s}.tiles.mapbox.com/v4/luizfonseca.7532f8a3/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibHVpemZvbnNlY2EiLCJhIjoiMTFNcXRXdyJ9.5PRw57nx5srpwP838-KjVQ',
+        tileLayer: 'http://{s}.tiles.mapbox.com/v4/luizfonseca.7532f8a3/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoibHVpemZvbnNlY2EiLCJhIjoiMTFNcXRXdyJ9.5PRw57nx5srpwP838-KjVQ',
         zoomControl: false,
       },
       center: {
@@ -33,6 +34,8 @@ angular.module('mapeando').controller('HomeCtrl', function($scope, demandFactory
 
 
       if (demands[i].pins && demands[i].pins.length > 0) {
+
+
         var pin     = demands[i].pins;
         var iconUrl = demands[i].category.icon_url;
         var pinSize = demands[i].pins.length;

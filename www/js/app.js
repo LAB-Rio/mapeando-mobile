@@ -9,16 +9,14 @@ angular.module('mapeando', ['ionic', 'ionic-material', 'leaflet-directive', 'ngC
 
   $ionicPlatform.ready(function() {
 
-    $cordovaStatusbar.styleHex('#444');
+    //$cordovaStatusbar.styleHex('#444');
 
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if(window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
-    if(window.StatusBar && window.cordova.platform == 'android') {
-  		window.StatusBar.backgroundColorByHexString('#555');
-    }
+
   });
 
 }).config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
@@ -36,7 +34,8 @@ angular.module('mapeando', ['ionic', 'ionic-material', 'leaflet-directive', 'ngC
     })
     .state('demands', {
       url: '/demands',
-      templateUrl: 'templates/demands.html'
+      templateUrl: 'templates/demands.html',
+      controller: 'DemandsCtrl'
     });
 
 }).constant('API', {

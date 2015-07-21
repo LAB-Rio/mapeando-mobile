@@ -15,14 +15,8 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-.tabs {
-  height: 60px !important; }
-  .tabs .tab-item {
-    padding-top: 5px !important; }
-
 .bar {
-  box-shadow: 0 2px 2px 0 rgba(33, 33, 33, 0.1) !important;
-  height: 55px !important; }
+  box-shadow: 0 2px 2px 0 rgba(33, 33, 33, 0.1) !important; }
 
 .tab-item-feat {
   background: #cf113d; }
