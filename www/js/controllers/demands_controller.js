@@ -34,7 +34,7 @@ angular.module('mapeando').controller('DemandsCtrl', function(
 
   $scope.getDemands = function() {
     $scope.show();
-    demandFactory.index({ limit: $scope.currentLimit, offset: $scope.currentOffset }, function(response){
+    demandFactory.index({ limit: $scope.currentLimit, offset: $scope.currentOffset, skip_fullname: '' }, function(response){
       $scope.setDemandList(response.demands);
     });
 

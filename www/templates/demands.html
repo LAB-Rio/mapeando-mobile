@@ -1,20 +1,21 @@
 <ion-view view-title="Demandas recentes">
   <ion-content>
     <ion-list>
-    <div class="list card" ng-repeat="demand in demands">
+    <div class="list card" ng-repeat="demand in demands" ng-if="demand.fullname != ''">
 
+      <demand>
       <div class="item item-avatar">
         <img ng-src="{{ demand.user.avatar }}">
         <h2>{{ demand.user.first_name }}</h2>
-        <p>quer {{ demand.category.name }} em {{ demand.pins[0].fullname }}</p>
+        <span>quer {{ demand.category.name }} em {{ demand.pins[0].fullname }}</span>
       </div>
 
       <div class="item item-body">
         <!--<img class="full-image" src="delorean.jpg">-->
         <p ng-hide="demand.fullname == ''"> {{ demand.fullname }} </p>
         <p>
-        <a href="#" class="subdued">0 Like</a>
-        <a href="#" class="subdued">0 Comments</a>
+          <a href="#" class="subdued">0 Like</a>
+          <a href="#" class="subdued">0 Comments</a>
         </p>
       </div>
 
@@ -27,7 +28,12 @@
           <i class="icon ion-ios-chatboxes-outline"></i>
           Comentar
         </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-more"></i>
+          Ver mais 
+        </a>
       </div>
+      </demand>
     </div>
     </ion-list>
 
